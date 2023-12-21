@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00ffd5;
+}
+.content {
+    padding: 20px;
+}
+.additional-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 2000px;
+}
+.animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+.snowflake {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('./pngwing2.com.png'); /* Зображення сніжинки */
+    background-size: cover;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #000;
+    background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a), 
+                      linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a);
+    background-size: 20px 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-size: cover;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.img-container{
+    display: block;
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #00ffea;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+img {
+    display: block;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #00ffea;
+}
+.content {
+    margin-bottom: 20px;
+    color: #fff;
+}
+.section {
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.section h2 {
+    color: #00d9ff;
+    border-bottom: 1px solid #00ffc8;
+    text-shadow: 2px 2px 2px #f0f3e0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.section p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.santa {
+    position: fixed;
+    top: 15%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-image: url('./pngwing.com.png');
+    background-size: cover;
+    animation: santaMove 5s linear infinite;
+}
+@keyframes santaMove {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-50px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+}
+.additional-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+.additional-content h2 {
+    color: #a7fffb;
+    border-bottom: 1px solid #00fff2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.additional-content p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.additional-content img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+.additional-content img {
+    max-width: 800px;
+    margin: 10px;
+    padding: 20px;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
